@@ -112,7 +112,7 @@ def kurtosis(vector):
         return kurt
     else:
         for an in vector:
-            kurt += (((float(an) - mean_loc) ** 4) / sd_loc)
+            kurt += ((float(an) - mean_loc ) / sd_loc)** 4
         kurt = (kurt / len_vect) - 3
         return kurt
 
